@@ -38,8 +38,17 @@ body{
     overflow: hidden;
     position: bottom;
 }
-.titulo-principal{
+.titulo-principal1{
     background-color: #FFDAA5;
+}
+.titulo-principal2{
+    background-color: #FBDBC4;
+}
+.titulo-principal3{
+    background-color: #FFDAA5;
+}
+.titulo-principal4{
+    background-color: #FBDBC4;
 }
 *{
     font-family: "Inter", sans-serif;
