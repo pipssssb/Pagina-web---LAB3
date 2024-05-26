@@ -15,13 +15,13 @@
                 <h1 class="logo">Lectomania</h1>
             </header>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li>
-                        <button class="boton-menu boton-buscador"><i class="bi bi-list"></i>Menu</button>
+                        <button class="boton-menu boton-menu_"><i class="bi bi-list"></i>Menu</button>
                     </li>
 
                     <li>
-                        <button class="boton-menu boton-buscador"><i class="bi bi-search"></i>Buscador</button>
+                        <button class="boton-menu boton-buscador"><i class="bi bi-search"></i>Buscador </button>
                     </li>
 
                     <li>
@@ -31,37 +31,94 @@
                     </li>
 
                     <li>
-                        <button class="boton-menu boton-buscador"><i class="bi bi-person-circle"></i>Perfil</button>
+                        <button class="boton-menu boton-perfil"><i class="bi bi-person-circle"></i>Perfil</button>
                     </li>
                 </ul>
+
+                <!-- Seccion del buscador -->
+                
             </nav>
+
         </aside>
+
+        <div class="categorias-principales">
+            <h2 class="categorias">Categorias principales</h2>
+            <ul class="menu-categorias-arriba">
+                <li>
+                    <button class="boton-categorias boton novelas juveniles"><span style="font-weight: bolder;">Novelas juveniles</span></button>
+                </li>
+                <li>
+                    <button class="boton-categorias boton novelas infantiles"><span style="font-weight: bolder;">Novelas infantiles</span></button>
+                </li>
+                <li>
+                    <button class="boton-categorias boton novelas"><span style="font-weight: bolder;">Novelas</span></button>
+                </li>
+                <li>
+                    <button class="boton-categorias boton ciencia y economia"><span style="font-weight: bolder;">Ciencia y economia</span></button>
+                </li>
+                <li>
+                    <button class="boton-categorias boton cocina"><span style="font-weight: bolder;">Cocina</span></button>
+                </li>
+                <li>
+                    <button class="boton-categorias boton biografias"><span style="font-weight: bolder;">Biografias</span></button>
+                </li>
+                <li>
+                    <button class="boton-categorias boton deportes"><span style="font-weight: bolder;">Deportes</span></button>
+                </li>
+            </ul>
+
+           <ul class="menu-categorias-abajo">
+            <li>
+                <button class="boton-categorias boton arte y diseño"><span style="font-weight: bolder;">Arte y diseño</span></button>
+            </li>
+            <li>
+                <button class="boton-categorias boton educacion"><span style="font-weight: bolder;">Educacion</span></button>
+            </li>
+            <li>
+                <button class="boton-categorias boton humanidades"><span style="font-weight: bolder;">Humanidades</span></button>
+            </li>
+            <li>
+                <button class="boton-categorias boton psicologia"><span style="font-weight: bolder;">Psicologia</span></button>
+            </li>
+            <li>
+                <button class="boton-categorias boton policiales"><span style="font-weight: bolder;">Policiales</span></button>
+            </li>
+            <li>
+                <button class="boton-categorias boton sagas y combos"><span style="font-weight: bolder;">Sagas y combos</span></button>
+            </li>
+            <li>
+                <button class="boton-categorias boton comics y mangas"><span style="font-weight: bolder;">Comics y mangas</span></button>
+            </li>
+           </ul>
+        </div>
+
+        <!-- Categorias principales -->
 
         <main>
             <h2 class="titulo-principal1">Nuevos ingresos</h2>
             <div class="contenedor-libros">
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/naci para esto.png" alt="">
+                    <img class="libro-imagen" src="imagenes/npe - ao1.png" alt="" style="width:121px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Naci para esto<br/>Alice Oseman<br/>$22.000</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Naci para esto<br/>Alice Oseman<br/></span>$22.000</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/two body problem.png" alt="">
+                    <img class="libro-imagen" src="imagenes/epdl3c - cl.jpg" alt="" style="width:135px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">El problema de los tres cuerpos<br/>Cixin Liu<br/>$27.000</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">El problema de los tres cuerpos<br/>Cixin Liu<br/></span>$27.000</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/dune.png" alt="">
+                    <img class="libro-imagen" src="imagenes/dune - fh.jpg" alt="" style="width:107px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Dune<br/>Frank Herbert<br/>$28.100</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Dune<br/>Frank Herbert<br/></span>$28.100</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/thgboss.png" alt="">
+                    <img class="libro-imagen" src="imagenes/ljdhbdpcys - sc.jpg" alt="" style="width:138px;height:194px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Los Juegos del Hambre:<br/>Balada de pájaros<br/>cantores y serpientes<br/>$26.300</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Los Juegos del Hambre - Libro 4<br/></span>$26.300</p></button>
                     </div>
                 </div>
             </div>
@@ -69,27 +126,27 @@
             <h2 class="titulo-principal2">Bestseller Argentina</h2>
             <div class="contenedor-libros">
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/heartless.png" alt="">
+                    <img class="libro-imagen" src="imagenes/heartless - mm.jpg" alt="" style="width:129px;height:193px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Heartless<br/>Marissa Meyer<br/>$19.800</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Heartless<br/>Marissa Meyer<br/></span>$19.800</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/alas de sangre.png" alt="">
+                    <img class="libro-imagen" src="imagenes/ads - ry.png" alt="" style="width:125px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Alas de sangre<br/>Rebecca Yarros<br/>$26.900</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Alas de sangre<br/>Rebecca Yarros<br/></span>$26.900</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/harry potter.png" alt="">
+                    <img class="libro-imagen" src="imagenes/hpylpf - jkr.png" alt="" style="width:128px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Harry Potter y La Piedra Filosofal<br/>J. K. Rowling<br/>$52.500</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Harry Potter y La Piedra Filosofal<br/>J. K. Rowling<br/></span>$52.500</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/buenos presagios.png" alt="">
+                    <img class="libro-imagen" src="imagenes/bp - tp&ng.jpg" alt="" style="width:128px;height:190px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Buenos Presagios<br/>Terry Pratchett & Neill Gaiman<br/>$26.300</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Buenos Presagios<br/>Terry Pratchett & Neill Gaiman<br/></span>$26.300</p></button>
                     </div>
                 </div>
             </div>
@@ -97,27 +154,27 @@
             <h2 class="titulo-principal1">Juveniles</h2>
             <div class="contenedor-libros">
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/thg1.png" alt="">
+                    <img class="libro-imagen" src="imagenes/ljdh - sc.jpg" alt="" style="width:121px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Los Juegos del Hambre<br/>Suzanne Collins<br/>$26.400</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Los Juegos del Hambre<br/>Suzanne Collins<br/></span>$26.400</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/maze runner.png" alt="">
+                    <img class="libro-imagen" src="imagenes/mrlcm - jd.png" alt="" style="width:135px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Maze Runner: La Cura Mortal<br/>James Dashner<br/>$16.500</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Maze Runner: La Cura Mortal<br/>James Dashner<br/></span>$16.500</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/divergente.png" alt="">
+                    <img class="libro-imagen" src="imagenes/divergente - vr.jpg" alt="" style="width:123px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Divergente<br/>Veronica Roth<br/>$26.400</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Divergente<br/>Veronica Roth<br/></span>$26.400</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/cazadores de sombras.png" alt="">
+                    <img class="libro-imagen" src="imagenes/cdscdh - cc.png" alt="" style="width:138px;height:194px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Cazadores de Sombras<br/>Cassandra Clare<br/>$23.300</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Cazadores de Sombras<br/>Cassandra Clare<br/></span>$23.300</p></button>
                     </div>
                 </div>
             </div>
@@ -125,33 +182,113 @@
             <h2 class="titulo-principal2">Comics y novelas graficas</h2>
             <div class="contenedor-libros">
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/invincible.png" alt="">
+                    <img class="libro-imagen" src="imagenes/ico - rk&.png" alt="" style="width:121px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Invincible compendium one<br/>Robert Kirkman<br/>$55.400</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Invincible compendium one<br/>Robert Kirkman<br/></span>$55.400</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/hellboy.png" alt="">
+                    <img class="libro-imagen" src="imagenes/hellboy - mm.jpg" alt="" style="width:123px;height:192px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Hellboy 1<br/>Mike Mignola<br/>$35.100</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Hellboy 1<br/>Mike Mignola<br/></span>$35.100</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/gotham.png" alt="">
+                    <img class="libro-imagen" src="imagenes/gc - eb&gr.jpg" alt="" style="width:127px;height:194px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Gotham Central<br/>Greg Rucka<br/>$75.600</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Gotham Central<br/>Greg Rucka<br/></span>$75.600</p></button>
                     </div>
                 </div>
                 <div class="libro">
-                    <img class="libro-imagen" src="imagenes/dragon ball.png" alt="">
+                    <img class="libro-imagen" src="imagenes/dbs12 - at.jpg" alt="" style="width:138px;height:194px;">
                     <div class="libro-detalles">
-                        <button class="ver-libro">Dragon Ball Super 12<br/>Akira Toriyama<br/>$5.310</button>
+                        <button class="ver-libro"><p><span style="font-weight: bold">Dragon Ball Super 12<br/>Akira Toriyama<br/></span>$5.310</p></button>
                     </div>
                 </div>
             </div>
 
         </main>
-   </div>
+
+        <!-- Seccion menu principal c/ libros -->
+
+    </div>
+
+    <footer class="footer">
+
+        <div class="wrapper">
+
+            <div class="footer-row">
+
+                <div class="footer-redes">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <h2>SEGUINOS</h2>
+                </div>
+
+                <div class="footer-datoscopados">
+                    <ul>
+                        <div class="enviamos-compra">
+                        <li><a href="#"><i class="bi bi-truck"></i></a></li>
+                        <h4>ENVIAMOS TU COMPRA</h4>
+                        <h5>Entregas a todo el país</h5>
+                        </div>
+
+                        <div class="distintos-pagos">
+                        <li><a href="#"><i class="bi bi-wallet2"></i></a></li>
+                        <h4>PAGA COMO QUIERAS</h4>
+                        <h5>Distintos medios de pago</h5>
+                        </div>
+
+                        <div class="compra-seguridad">
+                        <li><a href="#"><i class="bi bi-lock"></i></a></li>
+                        <h4>COMPRA CON SEGURIDAD</h4>
+                        <h5>Tus datos siempre protegidos</h5>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer-newspaper">
+                    <img src="imagenes/logo provisorio.png" alt="">
+                    <ul>
+                        <li>
+                            <button class="boton-newspaper" style="width: 466px;height:49px"><i class="bi bi-arrow-right-square-fill"></i>Registrate y enterate de nuestros beneficios</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Mas informacion</h4>
+                    <ul>
+                        <li><a href="#">Quienes somos</a></li>
+                        <li><a href="#">Como comprar</a></li>
+                        <li><a href="#">Escribinos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contactanos</h4>
+                    <ul>
+                        <li><a href="#">261555555</a></li>
+                        <li><a href="#">lectomanialibros@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-copyright">
+                    <h6>Copyright 2024. All Right Reserverd</h6>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 
