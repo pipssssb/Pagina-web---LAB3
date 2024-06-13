@@ -545,11 +545,13 @@ footer{
 }
 
 .producto-detalles-titulo{
-    font-size: 22px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .producto-detalles-precio{
-    font-size: 22px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 h4{

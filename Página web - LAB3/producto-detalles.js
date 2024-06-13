@@ -142,3 +142,4 @@ function cargarDetallesProducto() {
 }
 
 window.addEventListener('DOMContentLoaded', cargarDetallesProducto);
+window.onload = cargarDetallesProducto;

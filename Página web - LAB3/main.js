@@ -198,8 +198,8 @@
             id: "libro-16"
         },
         precio: 5.310
-    }, */
-];
+    }, 
+];*/
 
 // const contenedorProductos=document.querySelector("#contenedor-productos");
 
