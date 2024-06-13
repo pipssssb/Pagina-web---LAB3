@@ -429,6 +429,8 @@ footer{
 
 .carrito-vacio{
     display: none;
+    text-align: center;
+    margin: auto;
 }
 
 .carrito-productos{

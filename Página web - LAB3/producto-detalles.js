@@ -12,21 +12,21 @@ const libros = [
     {
         id: 2,
         titulo: 'El problema de los 3 cuerpos',
-        autor: 'Alice Oseman',
+        autor: 'Cixin Liu',
         precio: 27000,
         imagen: 'imagenes/libros/epdl3c - cl.jpg'
     },
     {
         id: 3,
         titulo: 'Dune',
-        autor: 'Alice Oseman',
+        autor: 'Frank Herbert',
         precio: 28100,
         imagen: 'imagenes/libros/dune - fh.jpg'
     },
     {
         id: 4,
         titulo: 'Los juegos del hambre - Libro 4',
-        autor: 'Alice Oseman',
+        autor: 'Suzanne Collins',
         precio: 26300,
         imagen: 'imagenes/libros/ljdhbdpcys - sc.jpg'
     },
@@ -36,28 +36,28 @@ const libros = [
     {
         id: 5,
         titulo: 'Heartless',
-        autor: 'Alice Oseman',
+        autor: 'Marissa Meyer',
         precio: 19800,
         imagen: 'imagenes/libros/heartless - mm.jpg'
     },
     {
         id: 6,
         titulo: 'Alas de sangre',
-        autor: 'Alice Oseman',
+        autor: 'Rebecca Yarros',
         precio: 26900,
         imagen: 'imagenes/libros/ads - ry.png'
     },
     {
         id: 7,
         titulo: 'Harry Potter y la piedra filosofal',
-        autor: 'Alice Oseman',
+        autor: 'J. K. Rowling',
         precio: 52500,
         imagen: 'imagenes/libros/hpylpf - jkr.png'
     },
     {
         id: 8,
         titulo: 'Buenos presagios',
-        autor: 'Alice Oseman',
+        autor: 'Terry Pratchett & Neill Gaiman',
         precio: 26300,
         imagen: 'imagenes/libros/bp - tp&ng.jpg'
     },
@@ -67,28 +67,28 @@ const libros = [
     {
         id: 9,
         titulo: 'Los Juegos del Hambre',
-        autor: 'Alice Oseman',
+        autor: 'Suzanne Collins',
         precio: 26400,
         imagen: 'imagenes/libros/ljdh - sc.jpg'
     },
     {
         id: 10,
         titulo: 'Maze Runner: La Cura Mortal',
-        autor: 'Alice Oseman',
+        autor: 'James Dashner',
         precio: 16500,
         imagen: 'imagenes/libros/mrlcm - jd.png'
     },
     {
         id: 11,
         titulo: 'Divergente',
-        autor: 'Alice Oseman',
+        autor: 'Veronica Roth',
         precio: 26400,
         imagen: 'imagenes/libros/divergente - vr.jpg'
     },
     {
         id: 12,
         titulo: 'Cazadores de Sombras',
-        autor: 'Alice Oseman',
+        autor: 'Cassandra Clare',
         precio: 23300,
         imagen: 'imagenes/libros/cdscdh - cc.png'
     },
@@ -96,7 +96,7 @@ const libros = [
     {
         id: 13,
         titulo: 'Invincible compendium one',
-        autor: 'Alice Oseman',
+        autor: 'Robert Kirkman',
         precio: 55400,
         imagen: 'imagenes/libros/ico - rk&.png'
     },
@@ -104,21 +104,21 @@ const libros = [
     {
         id: 14,
         titulo: 'Hellboy 1',
-        autor: 'Alice Oseman',
+        autor: 'Mike Mignola',
         precio: 35100,
         imagen: 'imagenes/libros/hellboy - mm.jpg'
     },
     {
         id: 15,
         titulo: 'Gotham Central',
-        autor: 'Alice Oseman',
+        autor: 'Greg Rucka',
         precio: 75600,
         imagen: 'imagenes/libros/gc - eb&gr.jpg'
     },
     {
         id: 16,
         titulo: 'Dragon Ball Super 12',
-        autor: 'Alice Oseman',
+        autor: 'Akira Toriyama',
         precio: 5310,
         imagen: 'imagenes/libros/dbs12 - at.jpg'
     },
@@ -141,5 +141,31 @@ function cargarDetallesProducto() {
     }
 }
 
+function agregarProductoAlCarrito(libro) {
+    const producto = {
+        id: libro.id,
+        titulo: libro.titulo,
+        precio: libro.precio,
+        imagen: libro.imagen,
+        cantidad: 1
+    };
+    agregarProducto(producto);
+}
+
 window.addEventListener('DOMContentLoaded', cargarDetallesProducto);
 window.onload = cargarDetallesProducto;
+
+
+
+window.addEventListener('DOMContentLoaded', cargarDetallesProducto);
+window.onload = cargarDetallesProducto;
+
+/* Obtener referencias a los elementos del DOM
+const carritoVacio = document.querySelector('.carrito-vacio');
+const carritoProductos = document.querySelector('.carrito-productos');
+const carritoAccionesVaciar = document.querySelector('.carrito-acciones-vaciar');
+const carritoAccionesTotal = document.querySelector('#total');
+const carritoAccionesPagar = document.querySelector('.carrito-acciones-pagar');
+
+// Array para almacenar los productos en el carrito
+let carrito = []; */
