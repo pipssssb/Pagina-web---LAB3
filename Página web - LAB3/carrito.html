@@ -20,6 +20,13 @@
                 </div>
                 <ul>
                     <li><button><a href="index.html"><i class="bi bi-arrow-left"></i>Seguir comprando</a></button></li>
+                    <li>
+                        <button>
+                            <a href="carrito.html">
+                                <i class="bi bi-cart"></i> Carrito <span class="carrito-contador"></span>
+                            </a>
+                        </button>
+                    </li>
                     <li><button><a href="#"><i class="bi bi-person-circle"></i>Perfil</a></button></li>
                 </ul>
             </div>
@@ -28,7 +35,7 @@
 
         </nav>
 
-        <main>
+        <!-- <main> 
             <h2 class="titulo-principal-carrito">Carrito de compras</h2>
             <div class="contenedor-carrito">
                 <p class="carrito-vacio">Tu carrito esta vacio</p>
@@ -36,7 +43,7 @@
                 <div class="carrito-productos">
 
                     <div class="carrito-productos">
-                        <!-- Aquí se renderizarán los productos en el carrito -->
+                        
                     </div>
 
                     <div class="carrito-producto">
@@ -99,13 +106,44 @@
 
             </div>
 
+        </main> -->
+
+        <main>
+            <h2 class="titulo-principal-carrito">Carrito de compras</h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio">Tu carrito está vacío</p>
+                
+                <div class="carrito-productos">
+                    <!-- Los productos se insertarán aquí dinámicamente -->
+                </div>
+            </div>
+        
+            <div class="carrito-acciones">
+                <div class="carrito-acciones-izq">
+                    <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                </div>
+        
+                <div class="carrito-acciones-der">
+                    <div class="carrito-acciones-total">
+                        <p>Total</p>
+                        <p id="total">$0</p>
+                    </div>
+                    <button class="carrito-acciones-pagar">Pagar</button>
+                </div>
+            </div>
         </main>
+
    </div>
     
     <script src="carrito.js"></script>
-    <!-- API Usando un CDN 
-    <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
-   -->
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof actualizarContadorCarrito === 'function') {
+                actualizarContadorCarrito();
+            }
+        });
+    </script>
 
 </body>
 </html>
