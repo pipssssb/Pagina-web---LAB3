@@ -13,10 +13,17 @@
        
         <nav>
             <div class="logo"><a href="index.html"><h1>Lectomania</h1></a></div>
-                <div class="searchbox">
+             <!-- <div class="searchbox"> 
                  <input type="search" placeholder="¿Que estás buscando?">
                  <span><button class="boton-buscador"><i class="bi bi-search"></i></button></span>
+                </div> -->
+
+                <div class="searchbox">
+                    <input type="search" id="searchInput" placeholder="¿Que estás buscando?" onkeyup="buscarLibro(event)">
+                    <span><button class="boton-buscador" onclick="buscarLibro()"><i class="bi bi-search"></i></button></span>
                 </div>
+                <div id="resultadosBusqueda" class="resultados-busqueda"></div>
+
                 <ul>
                     <!-- <li><button><a href="#"><i class="bi bi-list"></i>Menu</a></button></li> -->
                     <!-- <li><button><a href="carrito.html"><i class="bi bi-cart"></i>Carrito</a></button></li> -->
@@ -295,6 +302,85 @@
             }
         });
     </script>
+   
+   <!-- CARRITO -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const searchButton = document.querySelector('.boton-buscador');
+            const resultadosDiv = document.getElementById('resultadosBusqueda');
     
+            if (searchInput && searchButton && resultadosDiv) {
+                searchInput.addEventListener('keyup', function(event) {
+                    if (event.key === 'Enter') {
+                        buscarLibro();
+                    }
+                });
+    
+                searchButton.addEventListener('click', buscarLibro);
+            } else {
+                console.log('Elementos de búsqueda no encontrados');
+            }
+    
+            function buscarLibro() {
+                const searchTerm = searchInput.value.toLowerCase();
+                resultadosDiv.innerHTML = ''; // Limpiar resultados anteriores
+                
+                console.log('Buscando:', searchTerm);
+    
+                const resultados = todosLosLibros.filter(libro => 
+                    libro.titulo.toLowerCase().includes(searchTerm) || 
+                    libro.autor.toLowerCase().includes(searchTerm)
+                );
+    
+                console.log('Libros encontrados:', resultados.length);
+    
+                if (resultados.length === 0) {
+                    resultadosDiv.innerHTML = '<p>No se encontraron libros que coincidan con la búsqueda</p>';
+                } else {
+                    const flexContainer = document.createElement('div');
+                    flexContainer.className = 'resultados-flex-container';
+                    resultados.forEach(libro => {
+                        const libroElement = crearElementoLibro(libro);
+                        flexContainer.appendChild(libroElement);
+                    });
+                    resultadosDiv.appendChild(flexContainer);
+                }
+    
+                resultadosDiv.style.display = 'block';
+            }
+    
+            function crearElementoLibro(libro) {
+                const div = document.createElement('div');
+                div.className = 'resultado-libro';
+                div.innerHTML = `
+                    <img src="${libro.imagen}" alt="${libro.titulo}" style="width:121px;height:192px;">
+                    <div class="libro-detalles">
+                        <button class="ver-libro">
+                            <a href="producto-detalles.html?id=${libro.id}">
+                                <p><span style="font-weight: bold">${libro.titulo}<br/>${libro.autor}<br/></span>$${libro.precio}</p>
+                            </a>
+                        </button>
+                    </div>
+                `;
+                return div;
+            }
+        });
+    
+        // Cerrar resultados al hacer clic fuera
+        document.addEventListener('click', function(event) {
+            const resultadosDiv = document.getElementById('resultadosBusqueda');
+            const searchBox = document.querySelector('.searchbox');
+            if (!searchBox.contains(event.target) && !resultadosDiv.contains(event.target)) {
+                resultadosDiv.style.display = 'none';
+            }
+        });
+    </script>
+
+    <!-- BUSCADOR -->
+
+    <script src="libros.js"></script>
+
 </body>
 </html>
