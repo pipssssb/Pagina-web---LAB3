@@ -142,3 +142,4 @@ window.addEventListener('pageshow', function(event) {
         actualizarContadorCarrito();
     }
 });
+

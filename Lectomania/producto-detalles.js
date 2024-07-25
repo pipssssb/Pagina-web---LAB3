@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const libroId = parseInt(urlParams.get('id'));  // Convertimos a número
@@ -159,7 +157,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
-
-
-
-
