@@ -146,7 +146,7 @@ window.addEventListener('pageshow', function(event) {
 
 // MERCADO PAGO //
 
-const mp = new MercadoPago('YOUR_PUBLIC_KEY', {
+ const mp = new MercadoPago('APP_USR-fd4fd4fb-5882-4ef7-9fd8-2b7d4c08182c', {
     locale: "es-AR",
 });
 
