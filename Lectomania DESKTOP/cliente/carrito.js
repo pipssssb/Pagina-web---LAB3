@@ -179,7 +179,7 @@ document.getElementById("checkout-btn").addEventListener("click", async () => {
         createCheckoutButton(preference.id);
     } catch (error) {
         console.error("Error al crear la preferencia:", error);
-        alert("Hubo un error al procesar el pago. Por favor, inténtalo de nuevo."); //tira este error al intentar pagar
+        alert("Hubo un error al procesar el pago. Por favor, inténtalo de nuevo.");
     }
 });
 
